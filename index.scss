@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+*{
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+}
+
+$primary-color: #31CB9E;
+$white-color: #ffffff;
+$black-color: #030D24;
+$gray-color: #4D5562;
+$dark-color: #272F3E;
+$card-color: #F1F3F5;
+$light-color: #888E9C;
+
+
+.gradient-color {
+    background: linear-gradient(124.32deg, #31CB9E 0.01%, #0FAAA2 100.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.bg-color {
+    background: linear-gradient(124.32deg, #31CB9E 0.01%, #0FAAA2 100.02%);
+}
+.bg-white {
+    background: $white-color;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fs-normal {
+    font-style: normal;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+.button--contact {
+    padding: 10px 20px;
+    border-radius: 32px;
+    min-width: 125px;
+}
+
+.text-h2 {
+    font-size: 38px;
+    line-height: 46px;
+}
+.text-h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.text-h4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.text-normal {
+    font-size: 16px;
+    line-height: 24px;
+}
+.text-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+.fc-white {
+    color: $white-color;
+}
+.fc-black {
+    color: $black-color;
+}
+.fc-gray {
+    color: $gray-color;
+}
+.fc-primary {
+    color: $primary-color;
+}
+.fc-light {
+    color: $light-color;
+}
+
+.hero {
+   background-image: url('./assets/unsplash.png');
+
+   &-header {
+    padding: 40px 157px 0 160px;
+    gap: 131px;
+
+        &_logo {
+            width: 172px;
+            height: 36px;
+        }
+
+        &-right {
+            gap: 246px;
+
+            &_menu {
+                gap: 48px;
+
+                &-item:last-child {
+                    min-width: 70px;
+                }
+            }
+            
+            &_button {
+                gap: 31px;
+            }
+        }
+   }
+   &-introduce {
+    width: 100%;
+    margin-top: 115px;
+
+    &_content {
+        gap: 16px;
+
+        &-title {
+            width: 782px;
+        }
+        &-description {
+            width: 688px;
+            padding: 0 20px;
+        }
+    }
+
+    &_image {
+        margin: 14px 0 0 170px;
+    }
+   }
+}
+
+.service {
+    margin: 100px 160px 0px;
+
+    &-title {
+        width: 573px;
+        margin: 0 auto;
+    }
+    &-steps {
+        margin-top: 40px;
+        gap: 24px;
+
+        &_card {
+            background: $card-color;
+            backdrop-filter: blur(13.5139px);
+            border-radius: 8px;
+            padding: 40px 40px 56px 40px !important;
+            max-width: 358px !important;
+
+            &-icon {
+                margin-bottom: 32px;
+            }
+            
+            &-content {
+                &_title {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    &-benefit {
+        margin-top: 73px;
+        gap: 48px;
+
+        &_content {
+            min-width: 370px;
+            gap: 24px;
+        }
+    }
+    &-payment {        
+        padding-top: -105px !important;
+        &_image {
+            width:825px;
+            height: 550px;
+        }
+        &_content {
+            margin-top: 90px;
+            max-width: 350px;
+            gap: 24px;
+
+            &-method {
+                gap: 25px;
+            }
+        }
+    }
+}
+
+.solution {
+    background: url('./assets/solution.png');
+    padding: 90px 205px 90px 225px;
+
+    &_content {
+        width: 500px;
+        height: 150px;
+        margin-bottom: 81px;
+    }
+    &_application > div:first-child > div{
+        margin-top: 29px;
+    }
+
+    &_application > div:last-child > div{
+        margin-top: 64px;
+    }
+}
+
+.feature {
+    gap: 40px;
+    padding: 84px 255px 95px;
+
+    &-content {
+        width: 500px;
+        height: 126px;
+
+        &_title {
+            margin-bottom: 8px;
+        }
+    }
+    
+    &-list {
+        gap: 20px;
+        &_item {
+            gap: 16px;
+            width: 455px;
+            height: 72px;
+            background: $card-color;
+            padding: 24px 20px;
+        }
+    }
+
+    &-button button {
+        margin-bottom: 12px;
+    }
+    &-button p {
+        margin: 0;
+    }
+
+}
+
+.comment {
+    margin: 0 160px;
+    background: url('./assets/comment.jpg');
+    padding: 60px 47px 60px 60px;
+    gap: 67px;
+
+    &-content {
+        width: 537px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.01);
+        border: 0.900926px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(13.5139px);
+        border-radius: 8px;
+        
+        img {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-author {
+        width: 409px;
+
+        img {
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.information{
+    background: url('./assets/unsplash.png');
+    margin-top: 129px;
+    padding: 90px 300px 146px 160px;
+    gap: 209px;
+
+    &-contact {
+        width: 369px;
+        gap: 24px;
+
+
+        &_box {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.01);
+            border: 0.900926px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+
+            &-support {
+                margin-bottom: 24px;
+            }
+
+            &-phone {
+                gap: 33px;
+                margin-bottom: 9px;
+            }
+
+            &-email {
+                gap: 33px;
+            }
+        }
+    }
+
+    &-form {
+        width: 400px;
+        padding: 40px;
+        z-index: 1;
+        border-radius: 8px;
+
+        &_button {
+            gap: 28px;
+
+            button {
+                max-width: 80px !important;
+                padding: 10px 20px;
+                border-radius: 32px;
+            }
+            &-note {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+    &-image {
+        bottom: 0;
+        left: 982px;
+    }
+}
