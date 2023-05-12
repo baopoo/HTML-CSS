@@ -1,0 +1,27 @@
+.comment {
+    margin: 0 160px;
+    background: url('./assets/comment.jpg');
+    padding: 60px 47px 60px 60px;
+    gap: 67px;
+
+    &-content {
+        width: 537px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.01);
+        border: 0.900926px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(13.5139px);
+        border-radius: 8px;
+        
+        img {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-author {
+        width: 409px;
+
+        img {
+            margin-bottom: 22px;
+        }
+    }
+}
