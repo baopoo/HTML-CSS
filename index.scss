@@ -31,7 +31,13 @@ $light-color: #888E9C;
     background: linear-gradient(124.32deg, #31CB9E 0.01%, #0FAAA2 100.02%);
 }
 .bg-white {
-    background: $white-color;
+    background-color: $white-color;
+}
+.bg-footer {
+    background-color: #05122A;
+}
+.bc-dark {
+    background-color: $dark-color;
 }
 
 .fw-500 {
@@ -39,6 +45,9 @@ $light-color: #888E9C;
 }
 .fw-400 {
     font-weight: 400;
+}
+.fw-700 {
+    font-weight: 700;
 }
 .fs-normal {
     font-style: normal;
@@ -215,6 +224,10 @@ $light-color: #888E9C;
     &_application > div:last-child > div{
         margin-top: 64px;
     }
+    &_subtract {
+        top: 410px;
+        left: 622px;
+    }
 }
 
 .feature {
@@ -334,5 +347,61 @@ $light-color: #888E9C;
     &-image {
         bottom: 0;
         left: 982px;
+    }
+}
+
+.footer {
+    padding: 80px 160px 24px;
+
+    &-top {
+
+        &_brand {
+            gap: 24px;
+
+            &-logo {
+                width: 172px;
+                height: 36px;
+            }
+            &-menu {
+                gap: 24px;
+            }
+        }
+
+        &_contact {
+
+            &-title {
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+            &-connect {
+                line-height: 17px;
+                gap: 4px;
+                margin-bottom: 24px;
+            }
+
+            &-social {
+                gap: 12px;
+
+                i {
+                    font-size: 20px;
+                    padding: 13px 15px;
+                }
+
+                i:first-child {
+                    padding: 13px 18px;
+                }
+                
+            }
+        }
+    }
+
+    &-bot {
+        padding-top: 24px;
+        border-top: 1px solid $dark-color;
+        margin-top: 58px;
+
+        &_menu {
+            gap: 24px;
+        }
     }
 }

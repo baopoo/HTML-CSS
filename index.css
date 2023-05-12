@@ -24,7 +24,15 @@ body {
 }
 
 .bg-white {
-  background: #ffffff;
+  background-color: #ffffff;
+}
+
+.bg-footer {
+  background-color: #05122A;
+}
+
+.bc-dark {
+  background-color: #272F3E;
 }
 
 .fw-500 {
@@ -33,6 +41,10 @@ body {
 
 .fw-400 {
   font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 .fs-normal {
@@ -201,6 +213,10 @@ body {
 .solution_application > div:last-child > div {
   margin-top: 64px;
 }
+.solution_subtract {
+  top: 410px;
+  left: 622px;
+}
 
 .feature {
   gap: 40px;
@@ -304,4 +320,45 @@ body {
 .information-image {
   bottom: 0;
   left: 982px;
+}
+
+.footer {
+  padding: 80px 160px 24px;
+}
+.footer-top_brand {
+  gap: 24px;
+}
+.footer-top_brand-logo {
+  width: 172px;
+  height: 36px;
+}
+.footer-top_brand-menu {
+  gap: 24px;
+}
+.footer-top_contact-title {
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.footer-top_contact-connect {
+  line-height: 17px;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+.footer-top_contact-social {
+  gap: 12px;
+}
+.footer-top_contact-social i {
+  font-size: 20px;
+  padding: 13px 15px;
+}
+.footer-top_contact-social i:first-child {
+  padding: 13px 18px;
+}
+.footer-bot {
+  padding-top: 24px;
+  border-top: 1px solid #272F3E;
+  margin-top: 58px;
+}
+.footer-bot_menu {
+  gap: 24px;
 }/*# sourceMappingURL=index.css.map */
