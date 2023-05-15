@@ -4,7 +4,6 @@ const menuButton = document.querySelector('.hero-header_button');
 const sliderService = document.querySelector('.service-steps');
 const sliderServiceItem = document.querySelectorAll('.service-steps_card');
 const sliderLength = sliderServiceItem.length;
-const sliderItemWidth = 385;
 const sliderDot = document.querySelectorAll('.service-steps_pagination-item');
 console.log(sliderDot.length);
 
@@ -27,9 +26,10 @@ const onClickToggleMenu = () => {
 }
 
 const changeSliderService = () => {
+    let sliderItemWidth = 385;
     sliderDot[checkSliderLength].classList.remove('gradient-color');
     checkSliderLength++;
-    if (checkSliderLength > sliderLength - 1 ) {
+    if (checkSliderLength > sliderLength - 1) {
         checkSliderLength = 0;
         positionX = 0;
     } else {
@@ -39,6 +39,26 @@ const changeSliderService = () => {
     sliderService.style = `transform: translateX(${positionX}px)`
 }
 
-setInterval(() => {
-    changeSliderService();
+const setTimeChangeSliderService = setInterval(() => {
+    if (window.screen.width <= 393) {
+        changeSliderService();
+    } else {
+        clearInterval(setTimeChangeSliderService);
+    }
 }, 1500);
+
+window.onresize = () => {
+    if (window.screen.width > 393) {
+        clearInterval(setTimeChangeSliderService);
+    } else {
+        setTimeChangeSliderService = setInterval(() => {
+            changeSliderService();
+        })
+    }
+}
+
+
+
+
+
+
