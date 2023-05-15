@@ -1,11 +1,11 @@
+const mobileWidth = 393;
 const menuRight = document.querySelector('.hero-header-right');
 const menuButton = document.querySelector('.hero-header_button');
-
 const sliderService = document.querySelector('.service-steps');
 const sliderServiceItem = document.querySelectorAll('.service-steps_card');
 const sliderLength = sliderServiceItem.length;
 const sliderDot = document.querySelectorAll('.service-steps_pagination-item');
-var setTimeChangeSliderService;
+let intervalSliderService;
 
 let flag = false;
 let checkSliderLength = 0;
@@ -39,27 +39,27 @@ const changeSliderService = () => {
     sliderService.style = `transform: translateX(${positionX}px)`
 }
 
-const onLoadSliderService = () => {
-    setTimeChangeSliderService = setInterval(() => {
+const startInterval = () => {
+    intervalSliderService = setInterval(() => {
         changeSliderService();
     }, 1500);
 }
 
-const onClearSliderService = () => {
-    clearInterval(setTimeChangeSliderService);
+const stopInterval = () => {
+    clearInterval(intervalSliderService);
     sliderService.style = `transform: translateX(0px)`
 }
 
 window.onload = ()  => {
-    if (window.screen.width <= 393) {
-        onLoadSliderService();
+    if (window.screen.width <= mobileWidth) {
+        startInterval();
     } 
 }
 
 window.onresize = () => {
-    onClearSliderService();
-    if (window.screen.width <= 393) {
-        onLoadSliderService();
+    stopInterval();
+    if (window.screen.width <= mobileWidth) {
+        startInterval();
     }
 }
 
