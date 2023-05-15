@@ -5,7 +5,7 @@ const sliderService = document.querySelector('.service-steps');
 const sliderServiceItem = document.querySelectorAll('.service-steps_card');
 const sliderLength = sliderServiceItem.length;
 const sliderDot = document.querySelectorAll('.service-steps_pagination-item');
-console.log(sliderDot.length);
+var setTimeChangeSliderService;
 
 let flag = false;
 let checkSliderLength = 0;
@@ -39,23 +39,35 @@ const changeSliderService = () => {
     sliderService.style = `transform: translateX(${positionX}px)`
 }
 
-const setTimeChangeSliderService = setInterval(() => {
-    if (window.screen.width <= 393) {
+const onLoadSliderService = () => {
+    onClearSliderService();
+    setTimeChangeSliderService = setInterval(() => {
         changeSliderService();
-    } else {
-        clearInterval(setTimeChangeSliderService);
-    }
-}, 1500);
+    }, 1500);
+}
+
+const onClearSliderService = () => {
+    clearInterval(setTimeChangeSliderService);
+    sliderService.style = `transform: translateX(0px)`
+}
+
+window.onload = ()  => {
+    if (window.screen.width <= 393) {
+        onLoadSliderService();
+    } 
+}
 
 window.onresize = () => {
-    if (window.screen.width > 393) {
-        clearInterval(setTimeChangeSliderService);
+    if (window.screen.width <= 393) {
+        onLoadSliderService();
     } else {
-        setTimeChangeSliderService = setInterval(() => {
-            changeSliderService();
-        })
+        onClearSliderService();
     }
 }
+
+
+
+
 
 
 
