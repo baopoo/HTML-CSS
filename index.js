@@ -40,7 +40,6 @@ const changeSliderService = () => {
 }
 
 const onLoadSliderService = () => {
-    onClearSliderService();
     setTimeChangeSliderService = setInterval(() => {
         changeSliderService();
     }, 1500);
@@ -58,10 +57,9 @@ window.onload = ()  => {
 }
 
 window.onresize = () => {
+    onClearSliderService();
     if (window.screen.width <= 393) {
         onLoadSliderService();
-    } else {
-        onClearSliderService();
     }
 }
 
