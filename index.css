@@ -253,7 +253,6 @@ body {
 @media (max-width: 393px) {
   .service {
     margin: 80px 16px 0px;
-    width: 100%;
   }
   .service-slider {
     margin-top: 40px;
@@ -379,6 +378,7 @@ body {
 .solution {
   background: url("../assets/solution.png");
   padding: 90px 205px 90px 225px;
+  margin-top: -34px;
 }
 @media (max-width: 393px) {
   .solution {

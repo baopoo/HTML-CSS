@@ -1,6 +1,7 @@
 .solution {
   background: url("../assets/solution.png");
   padding: 90px 205px 90px 225px;
+  margin-top: -34px;
 
   @include mobile {
     padding: 80px 16px 94px;
