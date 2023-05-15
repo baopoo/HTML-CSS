@@ -1,12 +1,12 @@
 .service {
   margin: 100px 160px 0px;
-
   @include mobile {
     margin: 80px 16px 0px;
     width: 100%;
 
     &-slider {
-      width: 100%;
+      margin-top: 40px;
+      width: 393px;
       overflow: hidden;
       position: relative;
     }
@@ -21,7 +21,6 @@
     }
   }
   &-steps {
-    margin-top: 40px;
     gap: 24px;
     width: 100%;
 

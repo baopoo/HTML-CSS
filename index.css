@@ -256,7 +256,8 @@ body {
     width: 100%;
   }
   .service-slider {
-    width: 100%;
+    margin-top: 40px;
+    width: 393px;
     overflow: hidden;
     position: relative;
   }
@@ -271,7 +272,6 @@ body {
   }
 }
 .service-steps {
-  margin-top: 40px;
   gap: 24px;
   width: 100%;
 }
@@ -612,12 +612,27 @@ body {
 .footer {
   padding: 80px 160px 24px;
 }
+@media (max-width: 393px) {
+  .footer {
+    padding: 80px 16px;
+  }
+}
+@media (max-width: 393px) {
+  .footer-top {
+    gap: 40px;
+  }
+}
 .footer-top_brand {
   gap: 24px;
 }
 .footer-top_brand-logo {
   width: 172px;
   height: 36px;
+}
+@media (max-width: 393px) {
+  .footer-top_brand-note {
+    margin-bottom: 16px;
+  }
 }
 .footer-top_brand-menu {
   gap: 24px;
@@ -645,6 +660,13 @@ body {
   padding-top: 24px;
   border-top: 1px solid #272f3e;
   margin-top: 58px;
+}
+@media (max-width: 393px) {
+  .footer-bot {
+    gap: 32px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #272f3e;
+  }
 }
 .footer-bot_menu {
   gap: 24px;
