@@ -1,27 +1,48 @@
 .comment {
-    margin: 0 160px;
-    background: url('./assets/comment.jpg');
-    padding: 60px 47px 60px 60px;
-    gap: 67px;
+  margin: 0 160px;
+  background: url("./assets/comment.jpg");
+  padding: 60px 47px 60px 60px;
+  gap: 67px;
 
-    &-content {
-        width: 537px;
-        padding: 40px;
-        background: rgba(255, 255, 255, 0.01);
-        border: 0.900926px solid rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(13.5139px);
-        border-radius: 8px;
-        
-        img {
-            margin-bottom: 24px;
-        }
+  @include mobile {
+    margin: 0;
+    padding: 80px 16px;
+  }
+
+  &-content {
+    width: 537px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 0.900926px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(13.5139px);
+    border-radius: 8px;
+    align-self: stretch;
+
+    @include mobile {
+      width: 100%;
+      margin-bottom: 40px;
     }
 
-    &-author {
-        width: 409px;
-
-        img {
-            margin-bottom: 22px;
-        }
+    img {
+      margin-bottom: 24px;
     }
+  }
+
+  &-author {
+    width: 409px;
+
+    @include mobile {
+      width: 100%;
+      gap: 16px;
+    }
+
+    img {
+      margin-bottom: 22px;
+      @include mobile {
+        width: 72px;
+        height: 72px;
+        margin: auto 0;
+      }
+    }
+  }
 }
