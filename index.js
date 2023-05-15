@@ -7,14 +7,14 @@ const sliderLength = sliderServiceItem.length;
 const sliderDot = document.querySelectorAll('.service-steps_pagination-item');
 let intervalSliderService;
 
-let flag = false;
+let isCollapsed  = false;
 let checkSliderLength = 0;
 let positionX = 0;
 
 
 const onClickToggleMenu = () => {
-    flag = !flag;
-    if (flag) {
+    isCollapsed  = !isCollapsed ;
+    if (isCollapsed ) {
         menuButton.classList.remove('fa-bars');
         menuRight.classList.remove('d-none');
         menuButton.classList.add('fa-xmark');
@@ -26,7 +26,7 @@ const onClickToggleMenu = () => {
 }
 
 const changeSliderService = () => {
-    let sliderItemWidth = 385;
+    let sliderItemWidth = 375;
     sliderDot[checkSliderLength].classList.remove('gradient-color');
     checkSliderLength++;
     if (checkSliderLength > sliderLength - 1) {
