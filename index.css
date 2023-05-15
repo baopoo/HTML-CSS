@@ -252,13 +252,12 @@ body {
 }
 @media (max-width: 393px) {
   .service {
-    margin: 80px 0px 0px;
+    margin: 80px 16px 0px;
   }
   .service-slider {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 0 16px;
   }
 }
 .service-title {
