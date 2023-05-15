@@ -254,6 +254,11 @@ body {
   .service {
     margin: 80px 16px 0px;
   }
+  .service-warpper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
 }
 .service-title {
   width: 573px;
@@ -267,11 +272,13 @@ body {
 .service-steps {
   margin-top: 40px;
   gap: 24px;
+  width: 100%;
 }
 @media (max-width: 393px) {
   .service-steps {
+    position: relative;
     margin-top: 62px;
-    overflow: hidden;
+    transition: transform 0.5s linear;
   }
 }
 .service-steps_card {
@@ -285,6 +292,7 @@ body {
 @media (max-width: 393px) {
   .service-steps_card {
     padding: 40px 40px 88px 40px !important;
+    flex: 1 0 100%;
   }
 }
 .service-steps_card-icon {

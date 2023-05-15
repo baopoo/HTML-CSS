@@ -3,6 +3,11 @@
 
   @include mobile {
     margin: 80px 16px 0px;
+    &-warpper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
   }
 
   &-title {
@@ -16,10 +21,12 @@
   &-steps {
     margin-top: 40px;
     gap: 24px;
+    width: 100%;
 
     @include mobile {
+      position: relative;
       margin-top: 62px;
-      overflow: hidden;
+      transition: transform 0.5s linear;
     }
 
     &_card {
@@ -31,6 +38,7 @@
 
       @include mobile {
         padding: 40px 40px 88px 40px !important;
+        flex: 1 0 100%;
       }
 
       &-icon {
