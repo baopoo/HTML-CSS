@@ -681,14 +681,19 @@ body {
   padding: 90px 300px 146px 160px;
   gap: 209px;
 }
-@media (max-width: 393px) {
+@media (max-width: 768px) {
   .information {
     margin-top: 0;
+    padding: 80px 32px;
+  }
+}
+@media (max-width: 393px) {
+  .information {
     padding: 80px 16px;
   }
 }
 .information-contact {
-  width: 369px;
+  width: 361px;
   gap: 24px;
 }
 .information-contact_box {
@@ -701,7 +706,7 @@ body {
 }
 @media (max-width: 393px) {
   .information-contact_box {
-    padding: 40px 69px 40px 40px;
+    padding: 40px;
   }
 }
 .information-contact_box-support {
@@ -721,9 +726,14 @@ body {
   border-radius: 8px;
   position: relative;
 }
-@media (max-width: 393px) {
+@media (max-width: 768px) {
   .information-form {
     position: unset;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 393px) {
+  .information-form {
     width: 100%;
     margin-top: 24px;
   }

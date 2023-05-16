@@ -4,14 +4,21 @@
   padding: 90px 300px 146px 160px;
   gap: 209px;
 
-  @include mobile {
+  @include tablet {
     margin-top: 0;
+    padding: 80px 32px;
+  }
+
+  @include mobile {
     padding: 80px 16px;
   }
 
   &-contact {
-    width: 369px;
+    width: 361px;
     gap: 24px;
+
+    @include tablet {
+    }
 
     &_box {
       padding: 40px;
@@ -21,7 +28,7 @@
       border-radius: 8px;
 
       @include mobile {
-        padding: 40px 69px 40px 40px;
+        padding: 40px;
       }
 
       &-support {
@@ -46,8 +53,12 @@
     border-radius: 8px;
     position: relative;
 
-    @include mobile {
+    @include tablet {
       position: unset;
+      margin-top: 32px;
+    }
+
+    @include mobile {
       width: 100%;
       margin-top: 24px;
     }
