@@ -9,10 +9,19 @@
       padding: 18px 32px;
       gap: 18px;
     }
+    @include tablet {
+      padding: 18px 32px;
+      gap: 36px;
+    }
 
     &_logo img {
       width: 172px;
       height: 36px;
+
+      @include tablet {
+        width: 140px;
+        height: 35px;
+      }
 
       @include mobile {
         width: 135px;
@@ -22,8 +31,12 @@
 
     &-right {
       gap: 246px;
+
+      @include tablet {
+        gap: 36px;
+      }
+
       @include mobile {
-        // width: 361px.;
         gap: 0;
         position: absolute;
         top: 64px;
@@ -35,6 +48,11 @@
 
       &_menu {
         gap: 48px;
+
+        @include tablet {
+          gap: 12px;
+        }
+
         @include mobile {
           gap: 24px;
           padding: 24px 16px;
@@ -70,6 +88,7 @@
         }
 
         &-login {
+          min-width: 45px;
           @include mobile {
             padding: 10px 156px;
             border: 1px solid #ffffff;
@@ -94,6 +113,10 @@
   &-introduce {
     width: 100%;
     margin-top: 115px;
+
+    @include tablet {
+      margin-top: 80px;
+    }
 
     @include mobile {
       margin-top: 66px;
@@ -120,10 +143,14 @@
     }
 
     &_image {
-      margin: 14px 0 0 170px;
+      margin: 14px 200px 0px;
+      @include tablet {
+        margin: 42px 0 0 0;
+        height: 467px;
+      }
+
       @include mobile {
         margin: 42px 0 0 0;
-        width: 393px;
         height: 454px;
       }
     }

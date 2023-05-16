@@ -60,7 +60,7 @@ body {
 .button--contact {
   padding: 10px 20px;
   border-radius: 32px;
-  min-width: 125px;
+  max-width: 125px;
 }
 
 .text-h2 {
@@ -127,9 +127,21 @@ body {
     gap: 18px;
   }
 }
+@media (max-width: 768px) {
+  .hero-header {
+    padding: 18px 32px;
+    gap: 36px;
+  }
+}
 .hero-header_logo img {
   width: 172px;
   height: 36px;
+}
+@media (max-width: 768px) {
+  .hero-header_logo img {
+    width: 140px;
+    height: 35px;
+  }
 }
 @media (max-width: 393px) {
   .hero-header_logo img {
@@ -139,6 +151,11 @@ body {
 }
 .hero-header-right {
   gap: 246px;
+}
+@media (max-width: 768px) {
+  .hero-header-right {
+    gap: 36px;
+  }
 }
 @media (max-width: 393px) {
   .hero-header-right {
@@ -153,6 +170,11 @@ body {
 }
 .hero-header-right_menu {
   gap: 48px;
+}
+@media (max-width: 768px) {
+  .hero-header-right_menu {
+    gap: 12px;
+  }
 }
 @media (max-width: 393px) {
   .hero-header-right_menu {
@@ -188,6 +210,9 @@ body {
     padding: 0 16px 20px;
   }
 }
+.hero-header-right_button-login {
+  min-width: 45px;
+}
 @media (max-width: 393px) {
   .hero-header-right_button-login {
     padding: 10px 156px;
@@ -209,6 +234,11 @@ body {
 .hero-introduce {
   width: 100%;
   margin-top: 115px;
+}
+@media (max-width: 768px) {
+  .hero-introduce {
+    margin-top: 80px;
+  }
 }
 @media (max-width: 393px) {
   .hero-introduce {
@@ -237,12 +267,17 @@ body {
   }
 }
 .hero-introduce_image {
-  margin: 14px 0 0 170px;
+  margin: 14px 200px 0px;
+}
+@media (max-width: 768px) {
+  .hero-introduce_image {
+    margin: 42px 0 0 0;
+    height: 467px;
+  }
 }
 @media (max-width: 393px) {
   .hero-introduce_image {
     margin: 42px 0 0 0;
-    width: 393px;
     height: 454px;
   }
 }
@@ -250,12 +285,21 @@ body {
 .service {
   margin: 100px 160px 0px;
 }
+@media (max-width: 768px) {
+  .service {
+    margin: 80px 16px 0px;
+  }
+}
 @media (max-width: 393px) {
   .service {
     margin: 80px 16px 0px;
   }
-  .service-slider {
-    margin-top: 40px;
+}
+.service-slider {
+  margin-top: 40px;
+}
+@media (max-width: 393px) {
+  .service-slider-slider {
     width: 393px;
     overflow: hidden;
     position: relative;
@@ -288,6 +332,11 @@ body {
   border-radius: 8px;
   padding: 40px 40px 56px 40px !important;
   max-width: 358;
+}
+@media (max-width: 768px) {
+  .service-steps_card {
+    padding: 24px 24px 32px 24px !important;
+  }
 }
 @media (max-width: 393px) {
   .service-steps_card {
@@ -332,14 +381,37 @@ body {
   gap: 24px;
   margin-top: 141px;
 }
+@media (max-width: 768px) {
+  .service-benefit_content {
+    margin-top: 101px;
+  }
+}
 @media (max-width: 393px) {
   .service-benefit_content {
     margin-top: 80px;
   }
+}
+@media (max-width: 768px) {
+  .service-benefit_content button {
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 393px) {
   .service-benefit_content button {
     position: absolute;
     top: 766px;
     left: 134px;
+  }
+}
+@media (max-width: 768px) {
+  .service-benefit_content-title br {
+    display: none;
+  }
+}
+@media (max-width: 393px) {
+  .service-benefit_content-title br {
+    display: block;
   }
 }
 .service-payment {
@@ -354,6 +426,12 @@ body {
   width: 825px;
   height: 550px;
 }
+@media (max-width: 768px) {
+  .service-payment_image {
+    width: 100%;
+    margin: 32px -16px 0;
+  }
+}
 @media (max-width: 393px) {
   .service-payment_image {
     width: 100%;
@@ -366,13 +444,30 @@ body {
   max-width: 361px;
   gap: 24px;
 }
+@media (max-width: 768px) {
+  .service-payment_content {
+    margin-top: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 393px) {
   .service-payment_content {
     margin-top: 80px;
   }
 }
+@media (max-width: 768px) {
+  .service-payment_content-title {
+    margin: 0 auto;
+  }
+}
 .service-payment_content-method {
   gap: 25px;
+}
+@media (max-width: 768px) {
+  .service-payment_content-method {
+    margin: 0 auto;
+  }
 }
 
 .solution {
