@@ -478,6 +478,7 @@ body {
 @media (max-width: 768px) {
   .solution {
     padding: 80px 32px 94px;
+    margin-top: -55px;
   }
 }
 @media (max-width: 393px) {
@@ -559,6 +560,11 @@ body {
 .feature {
   gap: 40px;
   padding: 84px 255px 95px;
+}
+@media (max-width: 768px) {
+  .feature {
+    padding: 80px 32px;
+  }
 }
 @media (max-width: 393px) {
   .feature {

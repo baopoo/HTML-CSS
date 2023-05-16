@@ -2,6 +2,10 @@
   gap: 40px;
   padding: 84px 255px 95px;
 
+  @include tablet {
+    padding: 80px 32px;
+  }
+
   @include mobile {
     padding: 80px 16px;
   }
