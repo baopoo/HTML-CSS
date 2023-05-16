@@ -3,7 +3,7 @@
   padding: 90px 205px 90px 225px;
   margin-top: -34px;
 
-  @include tablet {
+  @include desktop {
     padding: 80px 32px 94px;
     margin-top: -55px;
   }
@@ -17,7 +17,7 @@
     height: 150px;
     margin-bottom: 81px;
 
-    @include tablet {
+    @include desktop {
       width: 100%;
     }
 
@@ -25,7 +25,7 @@
       margin-bottom: 8px;
     }
 
-    @include mobile {
+    @include desktop {
       width: 100%;
       margin-bottom: 116px;
     }
@@ -46,7 +46,7 @@
       div {
         margin-top: 29px;
 
-        @include tablet {
+        @include desktop {
           margin: 29px 0 147px;
         }
 
@@ -78,7 +78,7 @@
     top: 410px;
     left: 622px;
 
-    @include tablet {
+    @include desktop {
       width: 130px;
       height: 105px;
       top: 52%;

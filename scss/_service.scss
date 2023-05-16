@@ -1,7 +1,7 @@
 .service {
   margin: 100px 160px 0px;
 
-  @include tablet {
+  @include desktop {
     margin: 80px 32px 0px;
   }
 
@@ -45,6 +45,11 @@
       border-radius: 8px;
       padding: 40px 40px 56px 40px !important;
       max-width: 358;
+
+      @include desktop {
+        width: calc(100% / 3);
+        padding: 20px !important;
+      }
 
       @include tablet {
         padding: 40px 40px 88px 40px !important;
@@ -111,7 +116,7 @@
       }
 
       button {
-        @include tablet {
+        @include desktop {
           margin: 0 auto;
           margin-bottom: 36px;
         }
@@ -124,7 +129,7 @@
       }
 
       &-title {
-        @include tablet {
+        @include desktop {
           br {
             display: none;
           }
@@ -148,10 +153,14 @@
       width: 825px;
       // height: 550px;
 
+      @include desktop {
+        width: 100%;
+        margin: 32px -32px 0;
+      }
+
       @include tablet {
         width: 100%;
         margin: 32px -16px 0;
-        // height: 337px;
       }
     }
 
@@ -160,10 +169,15 @@
       width: 361px;
       gap: 24px;
 
+      @include desktop {
+        width: 100%;
+        text-align: center;
+      }
+
       @include tablet {
+        margin: 0 auto;
         margin-top: 40px;
         max-width: 100%;
-        margin: 0 auto;
       }
 
       @include mobile {
@@ -179,6 +193,9 @@
         }
 
         br {
+          @include desktop {
+            display: none;
+          }
           @include tablet {
             display: none;
           }
@@ -191,7 +208,7 @@
       &-method {
         gap: 25px;
 
-        @include tablet {
+        @include desktop {
           margin: 0 auto;
         }
       }

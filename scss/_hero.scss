@@ -8,12 +8,13 @@
     padding: 40px 157px 0 160px;
     gap: 131px;
 
-    @include mobile {
-      gap: 18px;
-    }
-    @include tablet {
+    @include desktop {
       padding: 18px 32px;
       gap: 36px;
+    }
+
+    @include mobile {
+      gap: 18px;
     }
 
     &_logo img {
@@ -34,6 +35,10 @@
     &-right {
       gap: 246px;
 
+      @include desktop {
+        gap: 24px;
+      }
+
       @include tablet {
         gap: 0;
         position: absolute;
@@ -48,12 +53,18 @@
       &_menu {
         gap: 48px;
 
+        @include desktop {
+          gap: 16px;
+        }
+
         @include tablet {
           gap: 24px;
           padding: 24px 16px;
           border-top: 1px solid rgba(255, 255, 255, 0.12);
           border-bottom: 1px solid rgba(255, 255, 255, 0.12);
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.13);
+        }
+        @include mobile {
         }
         &-item:last-child {
           min-width: 70px;
@@ -114,7 +125,7 @@
     width: 100%;
     margin-top: 115px;
 
-    @include tablet {
+    @include desktop {
       margin-top: 80px;
     }
 
@@ -149,7 +160,7 @@
     &_image {
       margin: 14px 200px 0px;
 
-      @include tablet {
+      @include desktop {
         margin: 42px 0 0 0;
         height: 454px;
         width: 100%;
