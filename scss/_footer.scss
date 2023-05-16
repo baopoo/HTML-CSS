@@ -1,6 +1,10 @@
 .footer {
   padding: 80px 160px 24px;
 
+  @include tablet {
+    padding: 80px 32px;
+  }
+
   @include mobile {
     padding: 80px 16px;
   }
@@ -59,7 +63,8 @@
     padding-top: 24px;
     border-top: 1px solid $dark-color;
     margin-top: 58px;
-    @include mobile {
+
+    @include tablet {
       gap: 32px;
       padding-bottom: 40px;
       border-bottom: 1px solid $dark-color;

@@ -758,6 +758,11 @@ body {
 .footer {
   padding: 80px 160px 24px;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 32px;
+  }
+}
 @media (max-width: 393px) {
   .footer {
     padding: 80px 16px;
@@ -807,7 +812,7 @@ body {
   border-top: 1px solid #272f3e;
   margin-top: 58px;
 }
-@media (max-width: 393px) {
+@media (max-width: 768px) {
   .footer-bot {
     gap: 32px;
     padding-bottom: 40px;
