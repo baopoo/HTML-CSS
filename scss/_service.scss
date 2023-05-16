@@ -2,7 +2,7 @@
   margin: 100px 160px 0px;
 
   @include tablet {
-    margin: 80px 16px 0px;
+    margin: 80px 32px 0px;
   }
 
   @include mobile {
@@ -12,12 +12,11 @@
   &-slider {
     margin-top: 40px;
 
-    @include mobile {
-      &-slider {
-        width: 393px;
-        overflow: hidden;
-        position: relative;
-      }
+    @include tablet {
+      margin-top: 0;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
     }
   }
 
@@ -25,18 +24,19 @@
     width: 573px;
     margin: 0 auto;
 
-    @include mobile {
-      width: 289px;
+    @include tablet {
+      width: 100%;
     }
   }
   &-steps {
     gap: 24px;
     width: 100%;
 
-    @include mobile {
+    @include tablet {
       position: relative;
       margin-top: 62px;
       transition: transform 0.5s linear;
+      gap: 0;
     }
 
     &_card {
@@ -47,13 +47,9 @@
       max-width: 358;
 
       @include tablet {
-        padding: 24px 24px 32px 24px !important;
-      }
-
-      @include mobile {
         padding: 40px 40px 88px 40px !important;
         flex: 1 0 100%;
-        max-width: 354px;
+        min-width: 354px;
       }
 
       &-icon {
@@ -86,9 +82,14 @@
     @include mobile {
       margin-top: 35px;
       position: relative;
+    }
 
-      img {
+    img {
+      @include tablet {
         width: 100%;
+      }
+
+      @include mobile {
         height: 383px;
         margin: 54px -16px 0;
       }
@@ -101,10 +102,12 @@
 
       @include tablet {
         margin-top: 101px;
+        align-items: center;
       }
 
       @include mobile {
         margin-top: 80px;
+        align-items: start;
       }
 
       button {
@@ -143,23 +146,18 @@
 
     &_image {
       width: 825px;
-      height: 550px;
+      // height: 550px;
 
       @include tablet {
         width: 100%;
         margin: 32px -16px 0;
-      }
-
-      @include mobile {
-        width: 100%;
-        height: 337px;
-        margin: 32px -16px 0;
+        // height: 337px;
       }
     }
 
     &_content {
       margin-top: 90px;
-      max-width: 361px;
+      width: 361px;
       gap: 24px;
 
       @include tablet {
@@ -175,6 +173,18 @@
       &-title {
         @include tablet {
           margin: 0 auto;
+        }
+        @include mobile {
+          margin: 0;
+        }
+
+        br {
+          @include tablet {
+            display: none;
+          }
+          @include mobile {
+            display: block;
+          }
         }
       }
 

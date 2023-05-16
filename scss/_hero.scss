@@ -1,12 +1,14 @@
 .hero {
   background-image: url("./assets/unsplash.png");
+  @include tablet {
+    position: relative;
+  }
 
   &-header {
     padding: 40px 157px 0 160px;
     gap: 131px;
 
     @include mobile {
-      padding: 18px 32px;
       gap: 18px;
     }
     @include tablet {
@@ -33,15 +35,12 @@
       gap: 246px;
 
       @include tablet {
-        gap: 36px;
-      }
-
-      @include mobile {
         gap: 0;
         position: absolute;
         top: 64px;
         left: 0;
         right: 0;
+        bottom: 0;
         z-index: 1;
         background: #05122a;
       }
@@ -50,10 +49,6 @@
         gap: 48px;
 
         @include tablet {
-          gap: 12px;
-        }
-
-        @include mobile {
           gap: 24px;
           padding: 24px 16px;
           border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -66,8 +61,11 @@
       }
 
       &_contact {
+        @include tablet {
+          padding: 24px 16px;
+        }
         @include mobile {
-          padding: 24px 16px 256px;
+          padding: 24px 16px 235px;
         }
 
         &-title {
@@ -82,14 +80,15 @@
 
       &_button {
         gap: 31px;
-        @include mobile {
+        @include tablet {
           gap: 16px;
-          padding: 0 16px 20px;
+          padding: 20px 16px;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
         }
 
         &-login {
           min-width: 45px;
-          @include mobile {
+          @include tablet {
             padding: 10px 156px;
             border: 1px solid #ffffff;
             border-radius: 32px;
@@ -97,15 +96,16 @@
           }
         }
         &-contact {
-          @include mobile {
+          @include tablet {
             padding: 10px 140px;
+            max-width: unset;
           }
         }
       }
     }
 
     i {
-      @include mobile {
+      @include tablet {
         font-size: 32px;
       }
     }
@@ -124,16 +124,20 @@
 
     &_content {
       gap: 16px;
+      padding: 0 20px;
 
       &-title {
         width: 782px;
-        @include mobile {
-          width: 361px;
+        @include tablet {
+          width: 100%;
         }
       }
       &-description {
         width: 688px;
-        padding: 0 20px;
+
+        @include tablet {
+          width: 100%;
+        }
 
         @include mobile {
           width: 361px;
@@ -147,13 +151,8 @@
 
       @include tablet {
         margin: 42px 0 0 0;
-        height: 467px;
-        width: 100%;
-      }
-
-      @include mobile {
-        margin: 42px 0 0 0;
         height: 454px;
+        width: 100%;
       }
     }
   }

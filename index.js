@@ -1,4 +1,4 @@
-const mobileWidth = 393;
+const mobileWidth = 767;
 const menuRight = document.querySelector('.hero-header-right');
 const menuButton = document.querySelector('.hero-header_button');
 const sliderService = document.querySelector('.service-steps');
@@ -26,7 +26,7 @@ const onClickToggleMenu = () => {
 }
 
 const changeSliderService = () => {
-    let sliderItemWidth = 375;
+    let sliderItemWidth = sliderServiceItem[0].offsetWidth;
     sliderDot[checkSliderLength].classList.remove('gradient-color');
     checkSliderLength++;
     if (checkSliderLength > sliderLength - 1) {

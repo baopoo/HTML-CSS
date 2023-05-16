@@ -1,6 +1,6 @@
 .comment {
   margin: 0 160px;
-  background: url("./assets/comment.jpg");
+  background: url("../assets/comment.jpg");
   padding: 60px 47px 60px 60px;
   gap: 67px;
 
@@ -37,9 +37,6 @@
 
     @include tablet {
       width: 100%;
-    }
-
-    @include mobile {
       gap: 16px;
     }
 

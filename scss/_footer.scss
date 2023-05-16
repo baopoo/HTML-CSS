@@ -10,7 +10,7 @@
   }
 
   &-top {
-    @include mobile {
+    @include tablet {
       gap: 40px;
     }
 
@@ -72,6 +72,11 @@
 
     &_menu {
       gap: 24px;
+
+      @include tablet {
+        gap: 18px;
+        justify-content: unset;
+      }
     }
   }
 }
