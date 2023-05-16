@@ -273,6 +273,7 @@ body {
   .hero-introduce_image {
     margin: 42px 0 0 0;
     height: 467px;
+    width: 100%;
   }
 }
 @media (max-width: 393px) {

@@ -144,9 +144,11 @@
 
     &_image {
       margin: 14px 200px 0px;
+
       @include tablet {
         margin: 42px 0 0 0;
         height: 467px;
+        width: 100%;
       }
 
       @include mobile {
