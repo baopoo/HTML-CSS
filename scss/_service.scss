@@ -29,8 +29,8 @@
     }
   }
   &-steps {
-    gap: 24px;
     width: 100%;
+    // gap: 12px;
 
     @include tablet {
       position: relative;
@@ -44,10 +44,8 @@
       backdrop-filter: blur(13.5139px);
       border-radius: 8px;
       padding: 40px 40px 56px 40px !important;
-      max-width: 358;
 
       @include desktop {
-        width: calc(100% / 3);
         padding: 20px !important;
       }
 
