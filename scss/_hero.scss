@@ -1,5 +1,6 @@
 .hero {
   background-image: url("./assets/unsplash.png");
+
   @include tablet {
     position: relative;
   }
@@ -162,7 +163,7 @@
 
       @include desktop {
         margin: 42px 0 0 0;
-        height: 454px;
+        // height: 454px;
         width: 100%;
       }
     }

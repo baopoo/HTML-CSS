@@ -105,14 +105,16 @@
       gap: 24px;
       margin-top: 141px;
 
-      @include tablet {
+      @include w-1200 {
         margin-top: 101px;
         align-items: center;
+        text-align: center;
       }
 
       @include mobile {
         margin-top: 80px;
         align-items: start;
+        text-align: start;
       }
 
       button {
@@ -159,7 +161,6 @@
       }
 
       @include tablet {
-        width: 100%;
         margin: 32px -16px 0;
       }
     }
