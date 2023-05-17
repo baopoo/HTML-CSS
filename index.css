@@ -386,7 +386,7 @@ body {
     position: relative;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .service-benefit img {
     width: 100%;
   }
@@ -451,7 +451,7 @@ body {
 @media (max-width: 1439px) {
   .service-payment_image {
     width: 100%;
-    margin: 32px -32px 0;
+    margin: 32px auto;
   }
 }
 @media (max-width: 767px) {
@@ -520,12 +520,12 @@ body {
 .solution {
   background: url("../assets/solution.png");
   padding: 90px 205px 90px 225px;
-  margin-top: -34px;
+  margin-top: -60px;
 }
 @media (max-width: 1439px) {
   .solution {
     padding: 80px 32px 94px;
-    margin-top: -55px;
+    margin-top: -10%;
   }
 }
 @media (max-width: 393px) {
@@ -538,7 +538,7 @@ body {
   height: 150px;
   margin-bottom: 81px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .solution_content {
     width: 100%;
   }
@@ -546,16 +546,16 @@ body {
 .solution_content div:first-child {
   margin-bottom: 8px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .solution_content {
     width: 100%;
-    margin-bottom: 116px;
+    margin-bottom: 40px;
   }
 }
 .solution_application img {
   max-width: 419px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .solution_application div:first-child img {
     max-width: 100%;
     height: 287px;
@@ -566,15 +566,15 @@ body {
 }
 @media (max-width: 1439px) {
   .solution_application div:first-child div {
-    margin: 29px 0 147px;
+    margin: 29px 0 5px;
   }
 }
 @media (max-width: 393px) {
   .solution_application div:first-child div {
-    margin: 24px 0 147px;
+    margin: 24px 0 5px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .solution_application div:last-child img {
     max-width: 100%;
     height: 265px;
@@ -591,13 +591,20 @@ body {
 .solution_subtract {
   top: 410px;
   left: 622px;
+  position: absolute;
 }
 @media (max-width: 1439px) {
   .solution_subtract {
+    top: 50%;
+    left: 40%;
+  }
+}
+@media (max-width: 1199px) {
+  .solution_subtract {
     width: 130px;
     height: 105px;
-    top: 52%;
-    left: 40%;
+    position: unset;
+    margin-bottom: 37px;
     transform: rotate(90deg);
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -607,7 +614,7 @@ body {
   .solution_subtract {
     width: 104px;
     height: 80px;
-    top: 55%;
+    margin-bottom: 37px;
   }
 }
 
@@ -615,7 +622,7 @@ body {
   gap: 40px;
   padding: 84px 255px 95px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .feature {
     padding: 80px 32px;
   }
@@ -664,11 +671,12 @@ body {
 
 .comment {
   margin: 0 160px;
-  background: url("../assets/comment.jpg");
+  background: url("../assets/comment.jpg") no-repeat;
+  background-size: cover;
   padding: 60px 47px 60px 60px;
   gap: 67px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .comment {
     margin: 0;
     padding: 80px 32px;
@@ -689,7 +697,7 @@ body {
   border-radius: 8px;
   align-self: stretch;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .comment-content {
     width: 100%;
     margin-bottom: 40px;
@@ -701,7 +709,7 @@ body {
 .comment-author {
   width: 409px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .comment-author {
     width: 100%;
     gap: 16px;
@@ -710,7 +718,7 @@ body {
 .comment-author img {
   margin-bottom: 22px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .comment-author img {
     margin-bottom: 0;
   }
@@ -729,9 +737,14 @@ body {
   padding: 90px 300px 146px 160px;
   gap: 209px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .information {
+    padding: 90px 160px 146px;
     margin-top: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .information {
     padding: 80px 32px;
   }
 }
@@ -744,7 +757,7 @@ body {
   width: 361px;
   gap: 24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .information-contact {
     width: 100%;
   }
@@ -757,7 +770,7 @@ body {
           backdrop-filter: blur(8px);
   border-radius: 8px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .information-contact_box {
     max-width: 361px;
     margin: 0 auto;
@@ -785,16 +798,20 @@ body {
   border-radius: 8px;
   position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .information-form {
     position: unset;
     margin-top: 32px;
-    max-width: 100%;
+    min-width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .information-form {
+    min-width: auto;
   }
 }
 @media (max-width: 393px) {
   .information-form {
-    max-width: 100%;
     margin-top: 24px;
   }
 }
@@ -813,12 +830,18 @@ body {
 .information-image {
   bottom: 0;
   left: 982px;
+  display: block;
+}
+@media (max-width: 1439px) {
+  .information-image {
+    display: none;
+  }
 }
 
 .footer {
   padding: 80px 160px 24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .footer {
     padding: 80px 32px;
   }

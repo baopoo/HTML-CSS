@@ -4,8 +4,12 @@
   padding: 90px 300px 146px 160px;
   gap: 209px;
 
-  @include tablet {
+  @include desktop {
+    padding: 90px 160px 146px;
     margin-top: 0;
+  }
+
+  @include w-1200 {
     padding: 80px 32px;
   }
 
@@ -17,7 +21,7 @@
     width: 361px;
     gap: 24px;
 
-    @include tablet {
+    @include w-1200 {
       width: 100%;
     }
 
@@ -28,7 +32,7 @@
       backdrop-filter: blur(8px);
       border-radius: 8px;
 
-      @include tablet {
+      @include desktop {
         max-width: 361px;
         margin: 0 auto;
       }
@@ -59,14 +63,17 @@
     border-radius: 8px;
     position: relative;
 
-    @include tablet {
+    @include w-1200 {
       position: unset;
       margin-top: 32px;
-      max-width: 100%;
+      min-width: 400px;
+    }
+
+    @include tablet {
+      min-width: auto;
     }
 
     @include mobile {
-      max-width: 100%;
       margin-top: 24px;
     }
 
@@ -87,5 +94,10 @@
   &-image {
     bottom: 0;
     left: 982px;
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
   }
 }

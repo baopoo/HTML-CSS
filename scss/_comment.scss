@@ -1,10 +1,11 @@
 .comment {
   margin: 0 160px;
-  background: url("../assets/comment.jpg");
+  background: url("../assets/comment.jpg") no-repeat;
+  background-size: cover;
   padding: 60px 47px 60px 60px;
   gap: 67px;
 
-  @include tablet {
+  @include w-1200 {
     margin: 0;
     padding: 80px 32px;
   }
@@ -22,7 +23,7 @@
     border-radius: 8px;
     align-self: stretch;
 
-    @include tablet {
+    @include w-1200 {
       width: 100%;
       margin-bottom: 40px;
     }
@@ -35,7 +36,7 @@
   &-author {
     width: 409px;
 
-    @include tablet {
+    @include w-1200 {
       width: 100%;
       gap: 16px;
     }
@@ -43,7 +44,7 @@
     img {
       margin-bottom: 22px;
 
-      @include tablet {
+      @include w-1200 {
         margin-bottom: 0;
       }
 

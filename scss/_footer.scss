@@ -1,7 +1,7 @@
 .footer {
   padding: 80px 160px 24px;
 
-  @include tablet {
+  @include w-1200 {
     padding: 80px 32px;
   }
 
